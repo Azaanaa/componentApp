@@ -1,0 +1,17 @@
+C:\Users\Computerlab\Desktop\SC-2\componentApp\componentApp\obj\Debug\net8.0-windows\componentApp.Form1.resources
+C:\Users\Computerlab\Desktop\SC-2\componentApp\componentApp\obj\Debug\net8.0-windows\componentApp.csproj.GenerateResource.cache
+C:\Users\Computerlab\Desktop\SC-2\componentApp\componentApp\obj\Debug\net8.0-windows\componentApp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Computerlab\Desktop\SC-2\componentApp\componentApp\obj\Debug\net8.0-windows\componentApp.AssemblyInfoInputs.cache
+C:\Users\Computerlab\Desktop\SC-2\componentApp\componentApp\obj\Debug\net8.0-windows\componentApp.AssemblyInfo.cs
+C:\Users\Computerlab\Desktop\SC-2\componentApp\componentApp\obj\Debug\net8.0-windows\componentApp.csproj.CoreCompileInputs.cache
+C:\Users\Computerlab\Desktop\SC-2\componentApp\componentApp\bin\Debug\net8.0-windows\componentApp.exe
+C:\Users\Computerlab\Desktop\SC-2\componentApp\componentApp\bin\Debug\net8.0-windows\componentApp.deps.json
+C:\Users\Computerlab\Desktop\SC-2\componentApp\componentApp\bin\Debug\net8.0-windows\componentApp.runtimeconfig.json
+C:\Users\Computerlab\Desktop\SC-2\componentApp\componentApp\bin\Debug\net8.0-windows\componentApp.dll
+C:\Users\Computerlab\Desktop\SC-2\componentApp\componentApp\bin\Debug\net8.0-windows\componentApp.pdb
+C:\Users\Computerlab\Desktop\SC-2\componentApp\componentApp\obj\Debug\net8.0-windows\componentApp.dll
+C:\Users\Computerlab\Desktop\SC-2\componentApp\componentApp\obj\Debug\net8.0-windows\refint\componentApp.dll
+C:\Users\Computerlab\Desktop\SC-2\componentApp\componentApp\obj\Debug\net8.0-windows\componentApp.pdb
+C:\Users\Computerlab\Desktop\SC-2\componentApp\componentApp\obj\Debug\net8.0-windows\componentApp.genruntimeconfig.cache
+C:\Users\Computerlab\Desktop\SC-2\componentApp\componentApp\obj\Debug\net8.0-windows\ref\componentApp.dll
+C:\Users\Computerlab\Desktop\SC-2\componentApp\componentApp\obj\Debug\net8.0-windows\componentApp.Properties.Resources.resources
