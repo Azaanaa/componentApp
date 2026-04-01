@@ -39,11 +39,22 @@
             groupBox3 = new GroupBox();
             groupBox4 = new GroupBox();
             button2 = new Button();
+            statusStrip1 = new StatusStrip();
+            toolStripStatusLabel1 = new ToolStripStatusLabel();
+            toolStripProgressBar1 = new ToolStripProgressBar();
+            groupBox5 = new GroupBox();
+            button3 = new Button();
+            groupBox6 = new GroupBox();
+            textBox1 = new TextBox();
+            button4 = new Button();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             groupBox1.SuspendLayout();
             groupBox2.SuspendLayout();
             groupBox3.SuspendLayout();
             groupBox4.SuspendLayout();
+            statusStrip1.SuspendLayout();
+            groupBox5.SuspendLayout();
+            groupBox6.SuspendLayout();
             SuspendLayout();
             // 
             // checkedListBox1
@@ -154,11 +165,84 @@
             button2.UseVisualStyleBackColor = true;
             button2.Click += button2_Click;
             // 
+            // statusStrip1
+            // 
+            statusStrip1.Items.AddRange(new ToolStripItem[] { toolStripStatusLabel1, toolStripProgressBar1 });
+            statusStrip1.Location = new Point(0, 590);
+            statusStrip1.Name = "statusStrip1";
+            statusStrip1.Size = new Size(1391, 22);
+            statusStrip1.TabIndex = 10;
+            statusStrip1.Text = "statusStrip1";
+            // 
+            // toolStripStatusLabel1
+            // 
+            toolStripStatusLabel1.Name = "toolStripStatusLabel1";
+            toolStripStatusLabel1.Size = new Size(118, 17);
+            toolStripStatusLabel1.Text = "toolStripStatusLabel1";
+            // 
+            // toolStripProgressBar1
+            // 
+            toolStripProgressBar1.Name = "toolStripProgressBar1";
+            toolStripProgressBar1.Size = new Size(100, 16);
+            // 
+            // groupBox5
+            // 
+            groupBox5.BackColor = Color.White;
+            groupBox5.Controls.Add(button3);
+            groupBox5.Location = new Point(397, 12);
+            groupBox5.Name = "groupBox5";
+            groupBox5.Size = new Size(200, 100);
+            groupBox5.TabIndex = 11;
+            groupBox5.TabStop = false;
+            // 
+            // button3
+            // 
+            button3.Location = new Point(6, 31);
+            button3.Name = "button3";
+            button3.Size = new Size(179, 55);
+            button3.TabIndex = 0;
+            button3.Text = "Taskbar process";
+            button3.UseVisualStyleBackColor = true;
+            button3.Click += button3_Click;
+            // 
+            // groupBox6
+            // 
+            groupBox6.BackColor = Color.White;
+            groupBox6.Controls.Add(button4);
+            groupBox6.Controls.Add(textBox1);
+            groupBox6.Location = new Point(397, 113);
+            groupBox6.Name = "groupBox6";
+            groupBox6.Size = new Size(200, 157);
+            groupBox6.TabIndex = 12;
+            groupBox6.TabStop = false;
+            // 
+            // textBox1
+            // 
+            textBox1.Location = new Point(6, 33);
+            textBox1.Name = "textBox1";
+            textBox1.Size = new Size(179, 23);
+            textBox1.TabIndex = 0;
+            textBox1.Text = "Show the TEXT on the text box";
+            textBox1.TextAlign = HorizontalAlignment.Center;
+            // 
+            // button4
+            // 
+            button4.Location = new Point(6, 76);
+            button4.Name = "button4";
+            button4.Size = new Size(179, 55);
+            button4.TabIndex = 1;
+            button4.Text = "Change Font";
+            button4.UseVisualStyleBackColor = true;
+            button4.Click += button4_Click;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1391, 612);
+            Controls.Add(groupBox6);
+            Controls.Add(groupBox5);
+            Controls.Add(statusStrip1);
             Controls.Add(groupBox4);
             Controls.Add(groupBox3);
             Controls.Add(groupBox2);
@@ -172,7 +256,13 @@
             groupBox2.ResumeLayout(false);
             groupBox3.ResumeLayout(false);
             groupBox4.ResumeLayout(false);
+            statusStrip1.ResumeLayout(false);
+            statusStrip1.PerformLayout();
+            groupBox5.ResumeLayout(false);
+            groupBox6.ResumeLayout(false);
+            groupBox6.PerformLayout();
             ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
@@ -188,5 +278,13 @@
         private GroupBox groupBox3;
         private GroupBox groupBox4;
         private Button button2;
+        private StatusStrip statusStrip1;
+        private ToolStripStatusLabel toolStripStatusLabel1;
+        private GroupBox groupBox5;
+        private Button button3;
+        private ToolStripProgressBar toolStripProgressBar1;
+        private GroupBox groupBox6;
+        private Button button4;
+        private TextBox textBox1;
     }
 }

@@ -11,6 +11,7 @@ namespace componentApp
         {
             InitializeComponent();
             InitializeImageList();
+            toolStripStatusLabel1.Text = "Ready";
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -98,6 +99,48 @@ namespace componentApp
                 // Apply the selected color to a control (e.g., the Form's background)
                 button2.BackColor = myDialog.Color;
             }
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            toolStripStatusLabel1.Text = "Starting process...";
+            toolStripProgressBar1.Value = 0; // Assuming toolStripProgressBar1 is added in the designer
+
+            // Simulate progress
+            for (int i = 0; i <= 100; i += 10)
+            {
+                toolStripProgressBar1.Value = i;
+                // In a real application, you might use a BackgroundWorker or Task to prevent UI freezing
+                System.Threading.Thread.Sleep(200);
+            }
+
+            toolStripStatusLabel1.Text = "Process finished.";
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            // 1. Create an instance of the FontDialog component.
+            FontDialog fontDialog1 = new FontDialog();
+
+            // 2. Optional: Set initial properties.
+            // Set the initial font of the dialog to the current font of the TextBox
+            fontDialog1.Font = textBox1.Font;
+
+            // Allow the user to select a color in the dialog box
+            fontDialog1.ShowColor = true;
+
+            // Set the initial color of the dialog to the current color of the TextBox
+            fontDialog1.Color = textBox1.ForeColor;
+
+            // 3. Display the dialog box and check the result.
+            if (fontDialog1.ShowDialog() == DialogResult.OK)
+            {
+                // 4. Apply the selected font and color to the TextBox if the user clicked OK.
+                textBox1.Font = fontDialog1.Font;
+                textBox1.ForeColor = fontDialog1.Color;
+            }
+
+            // Code following ShowDialog will not execute until the dialog is closed.
         }
     }
 
