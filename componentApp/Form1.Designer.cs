@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             checkedListBox1 = new CheckedListBox();
             lblCheckListBox = new Label();
@@ -54,6 +55,21 @@
             groupBox8 = new GroupBox();
             label1 = new Label();
             textBox2 = new TextBox();
+            groupBox9 = new GroupBox();
+            label2 = new Label();
+            tabControl1 = new TabControl();
+            tabPage1 = new TabPage();
+            label3 = new Label();
+            tabPage2 = new TabPage();
+            label4 = new Label();
+            groupBox10 = new GroupBox();
+            btnStop = new Button();
+            btnStart = new Button();
+            labelStatus = new Label();
+            timer1 = new System.Windows.Forms.Timer(components);
+            notifyIcon1 = new NotifyIcon(components);
+            numericUpDown1 = new NumericUpDown();
+            treeView1 = new TreeView();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             groupBox1.SuspendLayout();
             groupBox2.SuspendLayout();
@@ -65,6 +81,12 @@
             groupBox7.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)mediaPlayer).BeginInit();
             groupBox8.SuspendLayout();
+            groupBox9.SuspendLayout();
+            tabControl1.SuspendLayout();
+            tabPage1.SuspendLayout();
+            tabPage2.SuspendLayout();
+            groupBox10.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)numericUpDown1).BeginInit();
             SuspendLayout();
             // 
             // checkedListBox1
@@ -323,11 +345,151 @@
             textBox2.TextAlign = HorizontalAlignment.Center;
             textBox2.KeyPress += textBox2_KeyPress;
             // 
+            // groupBox9
+            // 
+            groupBox9.BackColor = Color.White;
+            groupBox9.Controls.Add(label2);
+            groupBox9.Location = new Point(313, 398);
+            groupBox9.Name = "groupBox9";
+            groupBox9.Size = new Size(370, 135);
+            groupBox9.TabIndex = 15;
+            groupBox9.TabStop = false;
+            // 
+            // label2
+            // 
+            label2.BackColor = Color.FromArgb(255, 255, 192);
+            label2.Font = new Font("Arial", 18F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label2.ForeColor = Color.Red;
+            label2.Location = new Point(46, 23);
+            label2.Name = "label2";
+            label2.Size = new Size(269, 97);
+            label2.TabIndex = 0;
+            label2.Text = "HELLO";
+            label2.TextAlign = ContentAlignment.MiddleCenter;
+            label2.Click += label2_Click;
+            label2.MouseLeave += label2_MouseLeave;
+            label2.MouseHover += label2_MouseHover;
+            // 
+            // tabControl1
+            // 
+            tabControl1.Controls.Add(tabPage1);
+            tabControl1.Controls.Add(tabPage2);
+            tabControl1.Location = new Point(14, 549);
+            tabControl1.Name = "tabControl1";
+            tabControl1.SelectedIndex = 0;
+            tabControl1.Size = new Size(293, 209);
+            tabControl1.TabIndex = 16;
+            // 
+            // tabPage1
+            // 
+            tabPage1.Controls.Add(label3);
+            tabPage1.Location = new Point(4, 29);
+            tabPage1.Name = "tabPage1";
+            tabPage1.Padding = new Padding(3);
+            tabPage1.Size = new Size(285, 176);
+            tabPage1.TabIndex = 0;
+            tabPage1.Text = "tabPage1";
+            tabPage1.UseVisualStyleBackColor = true;
+            // 
+            // label3
+            // 
+            label3.AutoSize = true;
+            label3.Location = new Point(50, 46);
+            label3.Name = "label3";
+            label3.Size = new Size(67, 20);
+            label3.TabIndex = 0;
+            label3.Text = "Хавтас 1";
+            // 
+            // tabPage2
+            // 
+            tabPage2.Controls.Add(label4);
+            tabPage2.Location = new Point(4, 29);
+            tabPage2.Name = "tabPage2";
+            tabPage2.Padding = new Padding(3);
+            tabPage2.Size = new Size(285, 176);
+            tabPage2.TabIndex = 1;
+            tabPage2.Text = "tabPage2";
+            tabPage2.UseVisualStyleBackColor = true;
+            // 
+            // label4
+            // 
+            label4.AutoSize = true;
+            label4.Location = new Point(72, 86);
+            label4.Name = "label4";
+            label4.Size = new Size(67, 20);
+            label4.TabIndex = 1;
+            label4.Text = "Хавтас 2";
+            // 
+            // groupBox10
+            // 
+            groupBox10.Controls.Add(btnStop);
+            groupBox10.Controls.Add(btnStart);
+            groupBox10.Controls.Add(labelStatus);
+            groupBox10.Location = new Point(690, 399);
+            groupBox10.Name = "groupBox10";
+            groupBox10.Size = new Size(313, 134);
+            groupBox10.TabIndex = 17;
+            groupBox10.TabStop = false;
+            groupBox10.Text = "Timer";
+            // 
+            // btnStop
+            // 
+            btnStop.Location = new Point(163, 73);
+            btnStop.Name = "btnStop";
+            btnStop.Size = new Size(111, 29);
+            btnStop.TabIndex = 2;
+            btnStop.Text = "Stop";
+            btnStop.UseVisualStyleBackColor = true;
+            btnStop.Click += btnStop_Click;
+            // 
+            // btnStart
+            // 
+            btnStart.Location = new Point(23, 73);
+            btnStart.Name = "btnStart";
+            btnStart.Size = new Size(111, 29);
+            btnStart.TabIndex = 1;
+            btnStart.Text = "Start";
+            btnStart.UseVisualStyleBackColor = true;
+            btnStart.Click += btnStart_Click;
+            // 
+            // labelStatus
+            // 
+            labelStatus.BackColor = Color.White;
+            labelStatus.BorderStyle = BorderStyle.Fixed3D;
+            labelStatus.Location = new Point(22, 35);
+            labelStatus.Name = "labelStatus";
+            labelStatus.Size = new Size(252, 25);
+            labelStatus.TabIndex = 0;
+            // 
+            // notifyIcon1
+            // 
+            notifyIcon1.Text = "notifyIcon1";
+            notifyIcon1.Visible = true;
+            // 
+            // numericUpDown1
+            // 
+            numericUpDown1.Location = new Point(1170, 590);
+            numericUpDown1.Name = "numericUpDown1";
+            numericUpDown1.Size = new Size(8, 27);
+            numericUpDown1.TabIndex = 18;
+            // 
+            // treeView1
+            // 
+            treeView1.Location = new Point(1027, 397);
+            treeView1.Name = "treeView1";
+            treeView1.Size = new Size(551, 368);
+            treeView1.TabIndex = 19;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1590, 816);
+            Controls.Add(treeView1);
+            Controls.Add(numericUpDown1);
+            Controls.Add(groupBox10);
+            Controls.Add(tabControl1);
+            Controls.Add(groupBox9);
             Controls.Add(groupBox8);
             Controls.Add(groupBox7);
             Controls.Add(groupBox6);
@@ -356,6 +518,14 @@
             ((System.ComponentModel.ISupportInitialize)mediaPlayer).EndInit();
             groupBox8.ResumeLayout(false);
             groupBox8.PerformLayout();
+            groupBox9.ResumeLayout(false);
+            tabControl1.ResumeLayout(false);
+            tabPage1.ResumeLayout(false);
+            tabPage1.PerformLayout();
+            tabPage2.ResumeLayout(false);
+            tabPage2.PerformLayout();
+            groupBox10.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)numericUpDown1).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -387,5 +557,20 @@
         private GroupBox groupBox8;
         private Label label1;
         private TextBox textBox2;
+        private GroupBox groupBox9;
+        private Label label2;
+        private TabControl tabControl1;
+        private TabPage tabPage1;
+        private Label label3;
+        private TabPage tabPage2;
+        private Label label4;
+        private GroupBox groupBox10;
+        private Label labelStatus;
+        private Button btnStart;
+        private System.Windows.Forms.Timer timer1;
+        private Button btnStop;
+        private NotifyIcon notifyIcon1;
+        private NumericUpDown numericUpDown1;
+        private TreeView treeView1;
     }
 }
