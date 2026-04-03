@@ -1,4 +1,7 @@
 using System.Windows.Forms;
+using static System.Net.Mime.MediaTypeNames;
+using System.Net.Mime;
+using System.Drawing;
 
 namespace componentApp
 {
@@ -10,7 +13,7 @@ namespace componentApp
         public Form1()
         {
             InitializeComponent();
-            InitializeImageList();
+            //InitializeImageList();
             toolStripStatusLabel1.Text = "Ready";
         }
 
@@ -44,7 +47,7 @@ namespace componentApp
             lblDatePicker.Text = dateTimePicker1.Value.ToString();
         }
 
-        private void InitializeImageList()
+/*        private void InitializeImageList()
         {
             // 1. Create an instance of the ImageList.
             myImageList = new ImageList();
@@ -82,7 +85,7 @@ namespace componentApp
                     currentImageIndex = 0;
                 }
             }
-        }
+        } */
 
         private void button2_Click(object sender, EventArgs e)
         {
@@ -142,6 +145,32 @@ namespace componentApp
 
             // Code following ShowDialog will not execute until the dialog is closed.
         }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            //mediaPlayer.URL = "e:\\stack.mp4";
+            using (OpenFileDialog openFileDialog = new OpenFileDialog())
+            {
+                openFileDialog.Filter = "video files (*.mp4)|*.mp4";
+                if (openFileDialog.ShowDialog() == DialogResult.OK)
+                {
+                    string filePath = openFileDialog.FileName;
+                    mediaPlayer.URL = filePath;
+                }
+            }
+        }
+
+        private void textBox2_KeyPress(object sender, KeyPressEventArgs e)
+        {
+
+            if (e.KeyChar == (char)Keys.Return)
+            {
+                label1.Text = textBox2.Text; 
+                e.Handled = true; // Prevents the beep sound
+            }
+
+        }
+
     }
 
 }
