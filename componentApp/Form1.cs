@@ -1,3 +1,4 @@
+using System.Diagnostics;
 using System.Drawing;
 using System.Net.Mime;
 using System.Windows.Forms;
@@ -158,6 +159,7 @@ namespace componentApp
                 {
                     string filePath = openFileDialog.FileName;
                     mediaPlayer.URL = filePath;
+
                 }
             }
         }
@@ -207,7 +209,7 @@ namespace componentApp
 
         private void btnStop_Click(object sender, EventArgs e)
         {
-            timer1.Stop(); 
+            timer1.Stop();
         }
 
         private void PopulateTreeView()
@@ -239,6 +241,19 @@ namespace componentApp
             MessageBox.Show("Selected: " + e.Node.Text);
         }
 
+        private void button6_Click(object sender, EventArgs e)
+        {
+            webView21.Source = new Uri("https://www.youtube.com/watch?v=D7GDTOSNQSk&list=RDD7GDTOSNQSk&start_radio=1");
+        }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            Process.Start(new ProcessStartInfo("https://www.youtube.com/watch?v=D7GDTOSNQSk&list=RDD7GDTOSNQSk&start_radio=1")
+            {
+                UseShellExecute = true
+            });
+         
+        }
     }
 
 }

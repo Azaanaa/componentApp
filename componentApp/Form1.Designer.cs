@@ -52,6 +52,8 @@
             groupBox7 = new GroupBox();
             button5 = new Button();
             mediaPlayer = new AxWMPLib.AxWindowsMediaPlayer();
+            button7 = new Button();
+            button6 = new Button();
             groupBox8 = new GroupBox();
             label1 = new Label();
             textBox2 = new TextBox();
@@ -70,6 +72,7 @@
             notifyIcon1 = new NotifyIcon(components);
             numericUpDown1 = new NumericUpDown();
             treeView1 = new TreeView();
+            webView21 = new Microsoft.Web.WebView2.WinForms.WebView2();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             groupBox1.SuspendLayout();
             groupBox2.SuspendLayout();
@@ -87,6 +90,7 @@
             tabPage2.SuspendLayout();
             groupBox10.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)numericUpDown1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)webView21).BeginInit();
             SuspendLayout();
             // 
             // checkedListBox1
@@ -210,7 +214,7 @@
             // 
             statusStrip1.ImageScalingSize = new Size(20, 20);
             statusStrip1.Items.AddRange(new ToolStripItem[] { toolStripStatusLabel1, toolStripProgressBar1 });
-            statusStrip1.Location = new Point(0, 789);
+            statusStrip1.Location = new Point(0, 914);
             statusStrip1.Name = "statusStrip1";
             statusStrip1.Padding = new Padding(1, 0, 16, 0);
             statusStrip1.Size = new Size(1590, 27);
@@ -314,6 +318,26 @@
             mediaPlayer.OcxState = (AxHost.State)resources.GetObject("mediaPlayer.OcxState");
             mediaPlayer.Size = new Size(631, 309);
             mediaPlayer.TabIndex = 0;
+            // 
+            // button7
+            // 
+            button7.Location = new Point(1027, 737);
+            button7.Name = "button7";
+            button7.Size = new Size(166, 74);
+            button7.TabIndex = 3;
+            button7.Text = "button7";
+            button7.UseVisualStyleBackColor = true;
+            button7.Click += button7_Click;
+            // 
+            // button6
+            // 
+            button6.Location = new Point(1027, 840);
+            button6.Name = "button6";
+            button6.Size = new Size(173, 71);
+            button6.TabIndex = 2;
+            button6.Text = "button6";
+            button6.UseVisualStyleBackColor = true;
+            button6.Click += button6_Click;
             // 
             // groupBox8
             // 
@@ -477,14 +501,28 @@
             // 
             treeView1.Location = new Point(1027, 397);
             treeView1.Name = "treeView1";
-            treeView1.Size = new Size(551, 368);
+            treeView1.Size = new Size(551, 247);
             treeView1.TabIndex = 19;
+            // 
+            // webView21
+            // 
+            webView21.AllowExternalDrop = true;
+            webView21.CreationProperties = null;
+            webView21.DefaultBackgroundColor = Color.White;
+            webView21.Location = new Point(331, 549);
+            webView21.Name = "webView21";
+            webView21.Size = new Size(672, 362);
+            webView21.TabIndex = 4;
+            webView21.ZoomFactor = 1D;
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1590, 816);
+            ClientSize = new Size(1590, 941);
+            Controls.Add(button7);
+            Controls.Add(webView21);
+            Controls.Add(button6);
             Controls.Add(treeView1);
             Controls.Add(numericUpDown1);
             Controls.Add(groupBox10);
@@ -526,6 +564,7 @@
             tabPage2.PerformLayout();
             groupBox10.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)numericUpDown1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)webView21).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -572,5 +611,8 @@
         private NotifyIcon notifyIcon1;
         private NumericUpDown numericUpDown1;
         private TreeView treeView1;
+        private Button button6;
+        private Button button7;
+        private Microsoft.Web.WebView2.WinForms.WebView2 webView21;
     }
 }
